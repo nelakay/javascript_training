@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <script>
+        function create(){
+            //creates a variable called "p" and creates a paragraph element
+            let p = document.createElement("p")
+            //stores a value in that variable to be displayed on the screen
+            p.textContent="Hello from create"
+            //through appendChild, the same paragraph is created, and because there is a button linked to the function
+            //a new paragraph with the text "Hello from create" is created every time the button is pressed
+            document.getElementsByTagName("body")[0].appendChild(p)
+        }
+       </script>
+    </head>
+    <body>
+        <button onclick="create()">Click</button>
+    </body>
+</html>

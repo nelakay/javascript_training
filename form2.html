@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>function handleclick(){
+            //store the values of each of the input fields in different variables
+            //while specifying what value is being displayed
+            let name = `name entered is:${document.getElementById("input1").value}`
+            let email = `email entered is:${document.getElementById("email").value}`
+            let password = `password entered is:${document.getElementById("password").value}`
+            let age = `age entered is:${document.getElementById("age").value}`
+            let dob = `date of birth entered is:${document.getElementById("dob").value}`
+            let url = `website entered is:${document.getElementById("url").value}`
+
+            //concatinates the values stored in the variables for each input field
+            let result = `${name} ${email} ${password} ${age} ${dob} ${url}`
+            alert(result)
+    }</script>
+    </head>
+    <body>
+       <label>Enter Name</label></br>
+       <input type="text" id="input1"/></br>
+       
+       <label>Enter your Email</label></br>
+       <input type="email" id="email"/></br>
+
+       <label>Enter your Password</label></br>
+       <input type="password" id="password"/></br>
+       
+       <label>Enter your Age</label></br>
+       <input type="number" id="age"/></br>
+
+       <label>Enter your DoB</label></br>
+       <input type="date" id="dob"/></br>
+
+       <label>Enter your Website</label></br>
+       <input type="url" id="url"/></br>
+
+       
+       <button onclick="handleclick()">Click</button>
+
+
+
+    </body>
+</html>
