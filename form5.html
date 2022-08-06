@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            //writes in both input fields at the same time, while text is being typed in input1
+            function handleclick(){
+                //takes value from input1 and stores it in a variable
+                let input = document.getElementById("input1").value
+                //sets input2 field equal to the value of the variable, printing the same text in both 
+                //input fields at the same time (oninput event in the html input fields)
+                document.getElementById("input2").value = input
+            }
+
+            function handlemail(){
+                let email = document.getElementById("email").value
+                document.getElementById("email2").value = email
+            }
+
+            function handlepass(){
+                let password = document.getElementById("password").value
+                document.getElementById("password2").value = password
+            }
+
+            function handleage(){
+                let age = document.getElementById("age").value
+                document.getElementById("age2").value = age
+            }
+
+            function handledob(){
+                let dob = document.getElementById("dob").value
+                document.getElementById("dob2").value = dob
+            }
+
+            function handleurl(){
+                let url = document.getElementById("url").value
+                document.getElementById("url2").value = url
+            }
+        </script>
+    </head>
+    <body>
+       <label>Enter Name</label></br>
+       <input type="text" oninput="handleclick()" id="input1"/></br>
+       <input type="text" id="input2"/></br>
+       
+       <label>Enter your Email</label></br>
+       <input type="email" oninput="handlemail()" id="email"/></br>
+       <input type="email" id="email2"/></br>
+
+       <label>Enter your Password</label></br>
+       <input type="password" oninput="handlepass()" id="password"/></br>
+       <input type="password" id="password2"/></br>
+       
+       <label>Enter your Age</label></br>
+       <input type="number" oninput="handleage()" id="age"/></br>
+       <input type="number" id="age2"/></br>
+
+       <label>Enter your DoB</label></br>
+       <input type="date" oninput="handledob()" id="dob"/></br>
+       <input type="date" id="dob2"/></br>
+
+       <label>Enter your Website</label></br>
+       <input type="url" oninput="handleurl()" id="url"/></br>
+       <input type="url" id="url2"/></br>
+
+    
+
+
+    </body>
+</html>

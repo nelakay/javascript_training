@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function handleclick(){
+                //takes the values in input1 and stores it in a variable (input)
+                let input = document.getElementById("input1").value
+                //displays the stored text in the second input field (input2)
+                document.getElementById("input2").value = input
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" onkeypress="handleclick()" id="input1"/>
+        <input type="text" id="input2"/>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>function handleclick(){
+            //stores all the elements with the class name "p1" in a variable
+            let element = document.getElementsByClassName("p1")
+            //loops through all the elements in the array and changes the backgrund color of the 
+            //elements stored in the variable "element" to green
+            for(let i=0; i<element.length; i++){
+                element[i].style.backgroundColor="green"
+            }
+        }</script>
+    </head>
+    <body>
+        <p class="p1">Content1</p>
+        <p class="p1">Content2</p>
+        <p class="p3">Content3</p>
+        <button onclick="handleclick()">Click me to see magic</button>
+    </body>
+</html>
