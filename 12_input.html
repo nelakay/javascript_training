@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#test2").val(
+                    $("#test1").val()
+                )
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <p>Name: <input type="text" id="test1"></p>
+    <p>Name: <input type="text" id="test2"></p>
+
+    <button>Show Value</button>
+
+</body>
+
+</html>

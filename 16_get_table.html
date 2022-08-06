@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $.get("https://jsonplaceholder.typicode.com/todos", function (data, status) {
+                    var content = "<table>"
+                    //the loop creates three rows in each table
+                    for (i = 0; i < data.length; i++) {
+                        //maps the properties and their values in the json file to the cells within the table
+                        content += '<tr><td>' + data[i].id + '</td>' + '<td>' + data[i].userId + '</td>' + 
+                            '<td>' + data[i].title + '</td>' + '<td>' + data[i].completed + '</td></tr>';
+                    }
+                    //this equals content = content + table
+                    content += "</table>"
+                    //the table is created and stored within a variable called "content" On click of the paragraph,
+                    //a new table is appended to the bottom of the created content. 
+                    $('#table1').append(content);
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <p id="table1"></p>
+    <button>Send an HTTP GET request to a page and get the result back</button>
+
+</body>
+
+</html>

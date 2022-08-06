@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    //On click, the elements with the id "test" will disappear
+  $("button").click(function(){
+    //To select by ID, we need the # symbol within the function
+    $("#test").hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>This is a heading</h2>
+
+<p>This is a paragraph.</p>
+<p id="test">This is another paragraph.</p>
+
+<button>Click me</button>
+
+</body>
+</html>

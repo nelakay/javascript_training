@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- JQuery library pull -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            //Will only be executed when JQuery is fully loaded
+        $(document).ready(function(){
+            //$() is a selector, and it select based on tags. 
+            //In this example, it will hide all paragraphs on click of the button
+            $("button").click(function(){
+              $("p").hide();
+            });
+          });
+        </script>
+    </head>
+    <body>
+        <p>This is the first paragraph</p>
+        <p>This is the second paragraph</p>
+        <p>This is the third paragraph</p>
+
+        <button>Click me!</button>
+    </body>
+</html>

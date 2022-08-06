@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        var counter = 10;
+        var interval = setInterval(function () {
+            counter--;
+            // Display 'counter' wherever you want to display it.
+            if (counter <= 0) {
+                //will end the loop once the value reaches 0
+                clearInterval(interval);
+                $('#timer').html("<h3>Count down complete</h3>");
+                return;
+            } else {
+                $('#time').text(counter);
+                console.log("Timer --> " + counter);
+            }
+        }, 1000);
+
+    </script>
+</head>
+
+<body>
+    <div>
+        <span id="timer">
+            <span id="time">10</span>Seconds
+        </span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            //Click events will make something happen after a trigger is activated
+            $("p").click(function () {
+                //This is used if the source of the event has to be modified; the target and the selector are the same element
+                /* Note that the whole content variable is just a string */
+                //On paragraph click, a new table gets created.
+                var content = "<table>"
+                    //the loop creates three rows in each table
+                for (i = 0; i < 3; i++) {
+                    content += '<tr><td>' + 'result ' + i + '</td></tr>';
+                }
+                //this equals content = content + table
+                content += "</table>"
+                //the table is created and stored within a variable called "content" On click of the paragraph,
+                //a new table is appended to the bottom of the created content. 
+                $('#table1').append(content);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <p id="table1">If you click on me, I will disappear.</p>
+
+
+</body>
+
+</html>
