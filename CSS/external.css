@@ -1,0 +1,12 @@
+p.first {
+    color: green;
+}
+
+.table-row {
+    background-color: green;
+    color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: beige;
+}
